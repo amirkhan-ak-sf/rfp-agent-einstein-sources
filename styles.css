@@ -1,0 +1,163 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-color:  #d5f3ff;
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* Styling for the logo */
+.logo {
+    max-width: 70px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Styling for the header text */
+.header-text {
+    text-align: center;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-text h2 {
+    margin: 0;
+    font-size: 16px;
+    color: #6c757d;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 95vh;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#chatWindow, #sourcesWindow {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#chatWindow {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%; /* Larger font size */
+}
+
+#messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.user {
+    align-self: flex-end;
+    background-color: #e9f9ff;
+    color: rgb(58, 58, 58);
+    text-align: right;
+}
+
+.ai {
+    align-self: flex-start;
+    background-color: #fff3f5;
+    color: black;
+    text-align: left;
+}
+
+.user .name, .ai .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.user .text, .ai .text {
+    margin-top: 5px; /* Add space between sender and text */
+}
+
+#inputArea {
+    display: flex;
+}
+
+#userInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#sendButton {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #03A1DF;
+    color: white;
+    cursor: pointer;
+}
+
+#sendButton:hover {
+    background-color: #00729f;
+}
+
+#sourcesWindow {
+    display: none;
+    height: 50%;
+    overflow-y: auto;
+    font-size: 75%; /* Smaller font size */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#sourcesTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#sourcesTable th, #sourcesTable td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+#sourcesTable th {
+    background-color: #f2f2f2;
+}
+
+#sourcesTable td:nth-child(2) {
+    width: 50%; /* Text Segment should be the largest size */
+}
+
+#sourcesTable td:nth-child(4) {
+    width: 30%; /* Absolute Directory Path should be the second largest */
+}
