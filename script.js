@@ -60,7 +60,7 @@ function displayResponse(data) {
             row.appendChild(textSegmentCell);
 
             const fileNameCell = document.createElement('td');
-            fileNameCell.textContent = source.file_name;
+            fileNameCell.textContent = source.fileName;
             row.appendChild(fileNameCell);
 
             const absoluteDirectoryPathCell = document.createElement('td');
