@@ -71,6 +71,6 @@ function displayResponse(data) {
         });
     } else {
         document.getElementById('sourcesWindow').style.display = 'none';
-        document.getElementById('chatWindow').style.height = '100%';
+        document.getElementById('chatWindow').style.height = '90%';
     }
 }
