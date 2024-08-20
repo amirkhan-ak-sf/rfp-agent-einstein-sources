@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MuleChain AI Agent</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="assets/logo.png" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MuleChain Einstein AI Agent</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+  </head>
 
-</head>
-
-
-<body>
+  <body>
     <div id="container">
-        <div class="header">
-            <img src="assets/mulechainai.png" alt="Einstein AI Agent Logo" class="logo">
-            <div class="header-text">
-                <h1>MuleChain Einstein AI Doc Agent</h1>
-                <h2>I know everything from <b>docs.mulesoft.com</b></h2>
-            </div>
-            <img src="assets/mulechain-einstein.png" alt="MuleChain AI Agent Logo" class="logo">
-
+      <div class="header">
+        <img
+          src="assets/mulechainai.png"
+          alt="Einstein AI Agent Logo"
+          class="logo"
+        />
+        <div class="header-text">
+          <h1>MAC Einstein AI Doc Agent</h1>
+          <h2>I know everything from <b>docs.mulesoft.com</b></h2>
         </div>
-        <div id="chatWindow">
-            <div id="messages"></div>
-            <div id="inputArea">
-                <input type="text" id="userInput" placeholder="Type your message here...">
-                <button id="sendButton">Send</button>
-            </div>
+        <img
+          src="assets/mulechain-einstein.png"
+          alt="MuleChain AI Agent Logo"
+          class="logo"
+        />
+      </div>
+      <div id="chatWindow">
+        <div id="messages"></div>
+        <div id="inputArea">
+          <input
+            type="text"
+            id="userInput"
+            placeholder="Type your message here..."
+          />
+          <button id="sendButton">Send</button>
         </div>
-        <div id="sourcesWindow">
-            <table id="sourcesTable">
-                <thead>
-                    <tr>
-                        <th>Score</th>
-                        <th>Text Segment</th>
-                        <th>File Name</th>
-                        <th>Absolute Directory Path</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </div>
+      </div>
+      <div id="sourcesWindow">
+        <table id="sourcesTable">
+          <thead>
+            <tr>
+              <th>Score</th>
+              <th>Text Segment</th>
+              <th>File Name</th>
+              <th>Absolute Directory Path</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
